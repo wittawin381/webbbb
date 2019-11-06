@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* padding-top: px; */
+  font-family: sans-serif;
+}
+
+.hello{
+  font-size: 20px;
+  text-align: center;
+}
