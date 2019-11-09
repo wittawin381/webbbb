@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css'
-import { Route, NavLink, Switch ,Redirect} from "react-router-dom";
+import { Route, NavLink, Switch, Redirect } from "react-router-dom";
 import About from './About'
 import Home from './Home'
 class Navbar extends React.Component{
