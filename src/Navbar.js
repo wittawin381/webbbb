@@ -27,6 +27,21 @@ class Navbar extends React.Component{
             visible
         });
     }
+
+    onClick = () =>{
+        try{
+            window.scroll({
+                top:0,
+                left:0,
+                behavior:"smooth"
+            });
+        }
+        catch(error){
+            window.scrollTo(0, 0);
+
+        }
+    }
+
     render(){
         return(
             <div>
@@ -67,22 +82,22 @@ class Navbar extends React.Component{
             <div className="nav-content">
                 <ul className="menu">
                     <li className="menu-n" id="home">
-                        <NavLink to="home">
+                        <NavLink to="home" onClick={this.onClick}>
                             HOME    
                         </NavLink>
                     </li>
                     <li className="menu-n" id="submen">
-                        <NavLink to="about">
+                        <NavLink to="about" onClick={this.onClick}>
                             ABOUT ME  
                         </NavLink>
                     </li>  
                     <li className="menu-n" id="submen">
-                        <NavLink to="test2">
+                        <NavLink to="test2" onClick={this.onClick}>
                             TEST2    
                         </NavLink>
                     </li> 
                     <li className="menu-n" id="submen">
-                        <NavLink to="test3">
+                        <NavLink to="test3" onClick={this.onClick}>
                             TEST3   
                         </NavLink>
                     </li>       
