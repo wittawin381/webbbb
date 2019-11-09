@@ -100,22 +100,28 @@
 }
 .menu li,.logo li{
     list-style: none;
-    padding-top: 0.5rem;
+    /* padding-top: 0.5rem;
     padding-left:0.75rem;
-    padding-right: 0.75rem;
+    padding-right: 0.75rem; */
     
 }
-#barmen{
+/* #barmen{
     padding-top:0.8rem;
-}
+} */
 #barmen a{
     font-family: 'Chonburi', cursive;
 
 }
 .menu-n a,.menu-ni a{
-    width:100%;
     height: 100%;
-    display: inline-block;
+    align-items: center;
+    /* padding-top: 0.75rem;
+    padding-bottom: 0.75rem; */
+    padding-left:0.75rem;
+    padding-right: 0.75rem;
+    display: flex;
+    white-space: nowrap;
+
     text-decoration: none;
     color: #127A73;
     font-size: 0.75rem;
