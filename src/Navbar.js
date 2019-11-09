@@ -48,14 +48,14 @@ class Navbar extends React.Component{
                                 </NavLink>
                             </li>  
                             <li className="menu-ni" id="barmen">
-                                <a href="#">
+                                <NavLink to="test2">
                                     TEST2    
-                                </a>
+                                </NavLink>
                             </li> 
                             <li className="menu-ni" id="barmen">
-                                <a href="#">
+                                <NavLink to="test3">
                                     TEST3   
-                                </a>
+                                </NavLink>
                             </li> 
                         </ul>   
                     </div>
@@ -67,24 +67,24 @@ class Navbar extends React.Component{
             <div className="nav-content">
                 <ul className="menu">
                     <li className="menu-n" id="home">
-                        <a href="home">
+                        <NavLink to="home">
                             HOME    
-                        </a>
+                        </NavLink>
                     </li>
                     <li className="menu-n" id="submen">
-                        <a href="about-me">
+                        <NavLink to="about">
                             ABOUT ME  
-                        </a>
+                        </NavLink>
                     </li>  
                     <li className="menu-n" id="submen">
-                        <a href="#">
+                        <NavLink to="test2">
                             TEST2    
-                        </a>
+                        </NavLink>
                     </li> 
                     <li className="menu-n" id="submen">
-                        <a href="#">
+                        <NavLink to="test3">
                             TEST3   
-                        </a>
+                        </NavLink>
                     </li>       
                 </ul>  
             </div>  
@@ -94,6 +94,8 @@ class Navbar extends React.Component{
 
                 <Route exact path="/home" component={Home} />
                 <Route exact path="/about" component={About} />
+                <Route exact path="/test2" component={Home} />
+                <Route exact path="/test3" component={About} />
             </Switch>
             </div>
         );
